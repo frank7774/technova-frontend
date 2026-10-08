@@ -1,0 +1,2 @@
+export const formatPrecio = (n) => new Intl.NumberFormat('es-PE', { style: 'currency', currency: 'PEN' }).format(n || 0);
+export const precioConDescuento = (precio, descuento = 0) => precio * (1 - descuento / 100);
